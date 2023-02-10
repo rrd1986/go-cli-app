@@ -27,8 +27,9 @@ usages with the command line execution of get`,
 		err := downloadFile(URL, fileName)
 		if err != nil {
 			log.Fatal(err)
+		} else {
+			fmt.Printf("File %s downlaod in current working directory", fileName)
 		}
-		fmt.Printf("File %s downlaod in current working directory", fileName)
 	},
 }
 

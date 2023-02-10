@@ -1,11 +1,19 @@
 /*
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-
 */
 package main
 
-import "github.com/rrd1986/go-cli-app/cmd"
+import (
+	"log"
+	"os"
+
+	"github.com/rrd1986/go-cli-app/cmd"
+)
 
 func main() {
-	cmd.Execute()
+	err := cmd.Execute()
+	if err != nil {
+		log.Println(err)
+		os.Exit(1)
+	}
 }
