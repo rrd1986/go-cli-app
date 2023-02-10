@@ -10,6 +10,8 @@ import (
 	"github.com/rrd1986/go-cli-app/cmd"
 )
 
+// Checking travis
+
 func main() {
 	err := cmd.Execute()
 	if err != nil {
